@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import logoReact from "../assets/imgs/react.png";
 
 function GridIzquierdo({ data, formSubmitted }) {
-  console.log("La data es:", data);
+  //console.log("La data es:", data);
 
   // Desestructura los datos del formulario
   const { nombre, telefono, sexo } = data;
@@ -20,7 +20,7 @@ function GridIzquierdo({ data, formSubmitted }) {
             {formSubmitted && (
               <div className="justify-content-md-start">
                 <h2>
-                  Datos del Formulario <hr />
+                  Datos del Empleado <hr />
                 </h2>
                 <p className="text-start">
                   <i className="bi bi-person"></i> &nbsp; &nbsp; Empleado:
