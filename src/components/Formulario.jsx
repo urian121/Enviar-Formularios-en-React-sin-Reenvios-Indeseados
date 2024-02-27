@@ -14,6 +14,14 @@ function Formulario() {
     sexo: "masculino", // Definimos un valor por defecto para el sexo
   });
 
+  /*
+   La función handleChange toma el evento del cambio, extrae el nombre y el valor del elemento que ha cambiado, y actualiza el estado del formulario con el nuevo valor del campo correspondiente. 
+   La misma se encarga de manejar cambios en los campos de un formulario en React. Cuando se produce un cambio en algún campo del formulario, 
+   esta función es invocada con el evento del cambio. El evento contiene información sobre el elemento que ha cambiado.
+
+   La función handleChange extrae el name (nombre) y el value (valor) del elemento que ha cambiado del evento. Luego, utiliza el método setFormData para actualizar el estado del formulario. 
+   Utiliza el spread operator (...) para copiar el estado actual del formulario (formData), y luego actualiza el valor del campo que ha cambiado, identificado por su name.
+   */
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({
