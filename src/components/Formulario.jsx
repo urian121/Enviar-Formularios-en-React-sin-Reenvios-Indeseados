@@ -51,7 +51,7 @@ function Formulario() {
       <Titulo />
       <GridIzquierdo data={formData} formSubmitted={formSubmitted} />
 
-      <div className="col-md-7 py-5 px-">
+      <div className="col-md-7 py-5">
         <h2 className="text-center mb-3">Registrar Empleados</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
